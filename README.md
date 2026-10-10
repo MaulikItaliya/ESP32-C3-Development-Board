@@ -10,12 +10,12 @@
 ![USB-C](https://img.shields.io/badge/USB-Type--C-1E3A5F?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Built_&_Tested-4CAF50?style=for-the-badge)
 
-</div>
+<br/>
 
-<p align="center">
-  <img src="Hardware_Images/3d_front.png" width="45%" alt="3D front view"/>
-  <img src="Hardware_Images/3d_rear.png" width="45%" alt="3D rear view"/>
-</p>
+<img src="ESP32-C3_Hardware%20Images/3D_Front_side.png" width="45%" alt="ESP32-C3 board, 3D front view"/>
+<img src="ESP32-C3_Hardware%20Images/3D_Back_side.png" width="45%" alt="ESP32-C3 board, 3D back view"/>
+
+</div>
 
 ---
 
@@ -24,6 +24,8 @@
 This project is a custom **4-layer ESP32-C3 development board** designed in **Altium Designer**. The goal was to gain practical experience in the full hardware workflow: schematic capture, PCB layout, manufacturing preparation, hand assembly and bring-up. The design follows the ESP32-C3 datasheet and the Espressif hardware design guidelines.
 
 The board was manufactured and then assembled by hand to validate the complete design workflow.
+
+📄 **[Download the schematic & PCB design PDF →](Harware%20design%20PDF/ESP32_RF-Board_PCB_%26_Schemetic.pdf)**
 
 ---
 
@@ -67,13 +69,17 @@ flowchart LR
 
 ## 🖼️ PCB Preview
 
-| Top View | Bottom View |
-|:---:|:---:|
-| <img src="Hardware_Images/top_view.png" width="100%" alt="PCB top view"/> | <img src="Hardware_Images/bottom_view.png" width="100%" alt="PCB bottom view"/> |
+### 2D Layout
 
-| 3D Front | 3D Rear |
+| Top Layer (L1) | Bottom Layer (L4) |
 |:---:|:---:|
-| <img src="Hardware_Images/3d_front.png" width="100%" alt="3D front view"/> | <img src="Hardware_Images/3d_rear.png" width="100%" alt="3D rear view"/> |
+| <img src="ESP32-C3_Hardware%20Images/2D_L1.png" width="100%" alt="PCB top layer L1"/> | <img src="ESP32-C3_Hardware%20Images/2D_L4.png" width="100%" alt="PCB bottom layer L4"/> |
+
+### 3D Render
+
+| Front Side | Back Side |
+|:---:|:---:|
+| <img src="ESP32-C3_Hardware%20Images/3D_Front_side.png" width="100%" alt="3D front side"/> | <img src="ESP32-C3_Hardware%20Images/3D_Back_side.png" width="100%" alt="3D back side"/> |
 
 ---
 
@@ -87,7 +93,7 @@ The PCB was assembled manually by hand soldering:
 - Power supply circuitry
 - Headers and supporting components
 
-<!-- Optional: add a photo of the assembled board here: ![Assembled board](Hardware_Images/assembled.jpg) -->
+<!-- Optional: add a photo of the assembled board, e.g. ![Assembled board](ESP32-C3_Hardware%20Images/Assembled.jpg) -->
 
 ---
 
@@ -110,12 +116,15 @@ The PCB was assembled manually by hand soldering:
 
 ```
 ESP32-C3-Development-Board/
-├── Hardware_Images/        # PCB top / bottom views and 3D renders
-├── Hardware_Design_PDF/    # Schematic and PCB design documents
+├── ESP32-C3_Hardware Images/
+│   ├── 2D_L1.png               # PCB top layer
+│   ├── 2D_L4.png               # PCB bottom layer
+│   ├── 3D_Front_side.png       # 3D render, front
+│   └── 3D_Back_side.png        # 3D render, back
+├── Harware design PDF/
+│   └── ESP32_RF-Board_PCB_&_Schemetic.pdf   # Schematic and PCB design document
 └── README.md
 ```
-
-📄 **[Hardware design PDF →](Hardware_Design_PDF/)**
 
 ---
 
